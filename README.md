@@ -14,6 +14,12 @@ Scripts - Contains R files in use
 
 312finalproject.R - R script analyzing CM_yr_ct.csv and PY_yr_ct.csv
 
+Plots - Contains jpegs of plots created in 312finalproject.R
+
+CM_yr_ct.jpeg - jpeg of CM_yr_ct.pl.R
+
+PY_yr_ct.jpeg - jpeg of PY_yr_ct.pl.R
+
 
 
 312finalproject.Rproj - Contains the settings and directories specific to this project
