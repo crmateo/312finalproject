@@ -1,7 +1,15 @@
 #Load packages
+library(ggplot2)
 library(dplyr)
 library(tidyverse)
 library(broom)
+
+#Citations
+citation(package = "ggplot2")
+citation(package = "dplyr")
+citation(package = "tidyverse")
+citation(package = "broom")
+
 
 #Read CM count by year csv
 CM_yr_ct <- read.csv("Data/CM_yr_ct.csv")
