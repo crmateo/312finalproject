@@ -8,7 +8,9 @@ CM_yr_ct.csv - csv containing Dungeness count data by year
 
 PY_yr_ct.csv - csv containing prey count data by year
 
-CM.PY_yr_ct - csv containining Dungeness and prey count data by year
+CM.PY_yr_ct.csv - csv containining Dungeness and prey count data by year
+
+SH_yr_ct.csv - csv containing shrimp count data by year
 
 
 
