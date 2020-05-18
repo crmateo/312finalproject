@@ -8,11 +8,17 @@ CM_yr_ct.csv - csv containing Dungeness count data by year
 
 PY_yr_ct.csv - csv containing prey count data by year
 
+CM.PY_yr_ct - csv containining Dungeness and prey count data by year
+
 
 
 Scripts - Contains R files in use
 
-312finalproject.R - R script analyzing CM_yr_ct.csv and PY_yr_ct.csv
+312finalproject.R - R script analyzing CM_yr_ct.csv, PY_yr_ct.csv, and CM.PY_yr_ct.csv
+
+pearsoncor.312final.R - R script conducted Pearson correlation analysis using data from CM.PY_yr_ct.csv
+
+
 
 Plots - Contains jpegs of plots created in 312finalproject.R
 
