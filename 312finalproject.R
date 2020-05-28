@@ -41,11 +41,12 @@ CM_yr_ct.pl.R <- ggplot(CM_yr_ct) +
   labs(x = "Year", y = "Dungeness Count") +
   annotate("text", label = paste(paste("Count = ", round(fit.CM_yr[2,2], digits = 3), "(year)", 
                                        sep=""), round(fit.CM_yr[1,2]), sep="+"), 
-           x = max(CM_yr_ct$Year)-13, 
-           y = max(CM_yr_ct$Count)-2) +
+           x = max(CM_yr_ct$Year)-14, 
+           y = max(CM_yr_ct$Count)-3) +
   annotate("text", label = paste("R^2", round(fit.CM_yr.R[1,2], digits = 3), sep = "="), 
-           x = max(CM_yr_ct$Year)-13, 
-           y = max(CM_yr_ct$Count)-4)
+           x = max(CM_yr_ct$Year)-14, 
+           y = max(CM_yr_ct$Count)-4) +
+  theme_classic()
 print(CM_yr_ct.pl.R)
 
 #Read PY count by year
@@ -82,7 +83,8 @@ PY_yr_ct.pl.R <- ggplot(PY_yr_ct) +
            y = max(PY_yr_ct$Count)-3) +
   annotate("text", label = paste("R^2", round(fit.PY_yr.R[1,2], digits = 3), sep = "="), 
            x = max(PY_yr_ct$Year)-13, 
-           y = max(PY_yr_ct$Count)-)
+           y = max(PY_yr_ct$Count)-5) +
+  theme_classic()
 print(PY_yr_ct.pl.R)
 
 #Read CM and PY count by year csv
@@ -119,7 +121,8 @@ CM.PY_yr_ct.pl.R <- ggplot(CM.PY_yr_ct) +
            y = max(CM.PY_yr_ct$CM_ct)-2) +
   annotate("text", label = paste("R^2", round(fit.CM.PY_yr.R[1,2], digits = 3), sep = "="), 
            x = max(CM.PY_yr_ct$PY_ct)-30, 
-           y = max(CM.PY_yr_ct$CM_ct)-4)
+           y = max(CM.PY_yr_ct$CM_ct)-4) +
+  theme_classic()
 print(CM.PY_yr_ct.pl.R)
 
 #Read SH count by year csv
@@ -156,7 +159,8 @@ SH_yr_ct.pl.R <- ggplot(SH_yr_ct) +
            y = max(SH_yr_ct$SH_ct)-3) +
   annotate("text", label = paste("R^2", round(fit.CM.PY_yr.R[1,2], digits = 3), sep = "="), 
            x = max(SH_yr_ct$Year)-15, 
-           y = max(SH_yr_ct$SH_ct)-6)
+           y = max(SH_yr_ct$SH_ct)-5) +
+  theme_classic()
 print(SH_yr_ct.pl.R)
 
 #Read CM and SH count by year csv
@@ -190,8 +194,9 @@ CM.SH_yr_ct.pl.R <- ggplot(CM.SH_yr_ct) +
                                        round(fit.CM.PY_yr[2,2], digits = 3), "(Shrimp Count)", 
                                        sep=""), round(fit.CM.PY_yr[1,2]), sep="+"), 
            x = max(CM.PY_yr_ct$PY_ct)-30, 
-           y = max(CM.PY_yr_ct$CM_ct)-2) +
+           y = max(CM.PY_yr_ct$CM_ct)-3) +
   annotate("text", label = paste("R^2", round(fit.CM.PY_yr.R[1,2], digits = 3), sep = "="), 
            x = max(CM.PY_yr_ct$PY_ct)-30, 
-           y = max(CM.PY_yr_ct$CM_ct)-4)
-print(CM.PY_yr_ct.pl.R)
+           y = max(CM.PY_yr_ct$CM_ct)-4) +
+  theme_classic()
+print(CM.SH_yr_ct.pl.R)
