@@ -39,8 +39,9 @@ CM_yr_ct.pl.R <- ggplot(CM_yr_ct) +
   geom_point(mapping = aes(x = Year, y = Count)) +
   geom_line(data = predicted.CM_yr, aes(x=ct_pred, y=Count)) +
   labs(x = "Year", y = "Dungeness Count") +
-  annotate("text", label = paste(paste("Count = ", round(fit.CM_yr[2,2], digits = 3), "(year)", 
-                                       sep=""), round(fit.CM_yr[1,2]), sep="+"), 
+  annotate("text", label = paste(paste("Count = ", round(fit.CM_yr[2,2], digits = 3), 
+                                       "***(year) +", 
+                                       sep=""), round(fit.CM_yr[1,2]), "***"), 
            x = max(CM_yr_ct$Year)-14, 
            y = max(CM_yr_ct$Count)-3) +
   annotate("text", label = paste("R^2", round(fit.CM_yr.R[1,2], digits = 3), sep = "="), 
@@ -77,8 +78,9 @@ PY_yr_ct.pl.R <- ggplot(PY_yr_ct) +
   geom_point(mapping = aes(x = Year, y = Count)) +
   geom_line(data = predicted.PY_yr, aes(x=ct_pred, y=Count)) +
   labs(x = "Year", y = "Prey Count") +
-  annotate("text", label = paste(paste("Count = ", round(fit.PY_yr[2,2], digits = 3), "(year)", 
-                                       sep=""), round(fit.PY_yr[1,2]), sep="+"), 
+  annotate("text", label = paste(paste("Count = ", round(fit.PY_yr[2,2], digits = 3), 
+                                       "***(year) +", 
+                                       sep=""), round(fit.PY_yr[1,2]), "***"), 
            x = max(PY_yr_ct$Year)-13, 
            y = max(PY_yr_ct$Count)-3) +
   annotate("text", label = paste("R^2", round(fit.PY_yr.R[1,2], digits = 3), sep = "="), 
@@ -115,8 +117,9 @@ CM.PY_yr_ct.pl.R <- ggplot(CM.PY_yr_ct) +
   geom_line(data = predicted.CM.PY_yr, aes(x=ct_pred, y=Count)) +
   labs(x = "Prey Count", y = "Dungeness Count") +
   annotate("text", label = paste(paste("Dungeness Count = ",
-                                       round(fit.CM.PY_yr[2,2], digits = 3), "(Prey Count)", 
-                                       sep=""), round(fit.CM.PY_yr[1,2]), sep="+"), 
+                                       round(fit.CM.PY_yr[2,2], digits = 3), 
+                                       "(Prey Count) +", 
+                                       sep=""), round(fit.CM.PY_yr[1,2]), "***"), 
            x = max(CM.PY_yr_ct$PY_ct)-30, 
            y = max(CM.PY_yr_ct$CM_ct)-2) +
   annotate("text", label = paste("R^2", round(fit.CM.PY_yr.R[1,2], digits = 3), sep = "="), 
@@ -153,8 +156,9 @@ SH_yr_ct.pl.R <- ggplot(SH_yr_ct) +
   geom_line(data = predicted.SH_yr, aes(x=ct_pred, y=Count)) +
   labs(x = "Year", y = "Dungeness Count") +
   annotate("text", label = paste(paste("Count = ", 
-                                       round(fit.SH_yr[2,2], digits = 3), "(year)", 
-                                       sep=""), round(fit.SH_yr[1,2]), sep="+"), 
+                                       round(fit.SH_yr[2,2], digits = 3), 
+                                       "***(year) +", 
+                                       sep=""), round(fit.SH_yr[1,2]), "***"), 
            x = max(SH_yr_ct$Year)-15, 
            y = max(SH_yr_ct$SH_ct)-3) +
   annotate("text", label = paste("R^2", round(fit.CM.PY_yr.R[1,2], digits = 3), sep = "="), 
@@ -191,8 +195,9 @@ CM.SH_yr_ct.pl.R <- ggplot(CM.SH_yr_ct) +
   geom_line(data = predicted.CM.SH_yr, aes(x=ct_pred, y=Count)) +
   labs(x = "Shrimp Count", y = "Dungeness Count") +
   annotate("text", label = paste(paste("Dungeness Count = ",
-                                       round(fit.CM.PY_yr[2,2], digits = 3), "(Shrimp Count)", 
-                                       sep=""), round(fit.CM.PY_yr[1,2]), sep="+"), 
+                                       round(fit.CM.PY_yr[2,2], digits = 3), 
+                                       "(Shrimp Count) +", 
+                                       sep=""), round(fit.CM.PY_yr[1,2]), "***"), 
            x = max(CM.PY_yr_ct$PY_ct)-30, 
            y = max(CM.PY_yr_ct$CM_ct)-3) +
   annotate("text", label = paste("R^2", round(fit.CM.PY_yr.R[1,2], digits = 3), sep = "="), 
