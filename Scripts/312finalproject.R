@@ -197,11 +197,11 @@ CM.SH_yr_ct.pl.R <- ggplot(CM.SH_yr_ct) +
   annotate("text", label = paste(paste("Dungeness Count = ",
                                        round(fit.CM.PY_yr[2,2], digits = 3), 
                                        "(Shrimp Count) +", 
-                                       sep=""), round(fit.CM.PY_yr[1,2]), "***"), 
-           x = max(CM.PY_yr_ct$PY_ct)-30, 
-           y = max(CM.PY_yr_ct$CM_ct)-3) +
-  annotate("text", label = paste("R^2", round(fit.CM.PY_yr.R[1,2], digits = 3), sep = "="), 
-           x = max(CM.PY_yr_ct$PY_ct)-30, 
-           y = max(CM.PY_yr_ct$CM_ct)-4) +
+                                       sep=""), round(fit.CM.SH_yr[1,2]), "***"), 
+           x = max(CM.SH_yr_ct$SH_ct)-25, 
+           y = max(CM.SH_yr_ct$CM_ct)-3) +
+  annotate("text", label = paste("R^2", round(fit.CM.SH_yr.R[1,2], digits = 3), sep = "="), 
+           x = max(CM.SH_yr_ct$SH_ct)-25, 
+           y = max(CM.SH_yr_ct$CM_ct)-4) +
   theme_classic()
 print(CM.SH_yr_ct.pl.R)
