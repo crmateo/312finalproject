@@ -161,7 +161,7 @@ SH_yr_ct.pl.R <- ggplot(SH_yr_ct) +
                                        sep=""), round(fit.SH_yr[1,2]), "***"), 
            x = max(SH_yr_ct$Year)-15, 
            y = max(SH_yr_ct$SH_ct)-3) +
-  annotate("text", label = paste("R^2", round(fit.CM.PY_yr.R[1,2], digits = 3), sep = "="), 
+  annotate("text", label = paste("R^2", round(fit.SH_yr.R[1,2], digits = 3), sep = "="), 
            x = max(SH_yr_ct$Year)-15, 
            y = max(SH_yr_ct$SH_ct)-5) +
   theme_classic()
