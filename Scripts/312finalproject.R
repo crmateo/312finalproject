@@ -154,7 +154,7 @@ fit.SH_yr.R <- glance(lm_fit.SH_yr)
 SH_yr_ct.pl.R <- ggplot(SH_yr_ct) +
   geom_point(mapping = aes(x = Year, y = SH_ct)) +
   geom_line(data = predicted.SH_yr, aes(x=ct_pred, y=Count)) +
-  labs(x = "Year", y = "Dungeness Count") +
+  labs(x = "Year", y = "Shrimp Count") +
   annotate("text", label = paste(paste("Count = ", 
                                        round(fit.SH_yr[2,2], digits = 3), 
                                        "***(year) +", 
