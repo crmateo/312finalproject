@@ -12,13 +12,15 @@ CM.PY_yr_ct.csv - csv containining Dungeness and prey count data by year
 
 SH_yr_ct.csv - csv containing shrimp count data by year
 
+CM.SH_yr_ct.csv - csv containing Dungeness and shrimp count data by year
+
 
 
 Scripts - Contains R files in use
 
 312finalproject.R - R script analyzing CM_yr_ct.csv, PY_yr_ct.csv, and CM.PY_yr_ct.csv
 
-pearsoncor.312final.R - R script conducted Pearson correlation analysis using data from CM.PY_yr_ct.csv
+pearsoncor.312final.R - R script conducting a Pearson correlation analysis using data from CM.PY_yr_ct.csv and CM.SH_yr_ct.csv
 
 
 
@@ -27,6 +29,12 @@ Plots - Contains jpegs of plots created in 312finalproject.R
 CM_yr_ct.jpeg - jpeg of CM_yr_ct.pl.R
 
 PY_yr_ct.jpeg - jpeg of PY_yr_ct.pl.R
+
+CM.PY_yr_ct.jpeg - jpeg of CM.PY_yr_ct.pl.R
+
+SH_yr_ct.jpeg - jpeg of SH_yr_ct.pl.R
+
+CM.SH_yr_ct.jpeg - jpeg of CM.SH_yr_ct.pl.R
 
 
 
