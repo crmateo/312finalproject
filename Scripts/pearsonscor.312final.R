@@ -1,6 +1,9 @@
 #Load required packages
 library(ggpubr)
 
+#Citations
+citation(package = "ggpubr")
+
 #Downloading required package from github
 if(!require(devtools)) install.packages("devtools")
 devtools::install_github("kassambara/ggpubr")
